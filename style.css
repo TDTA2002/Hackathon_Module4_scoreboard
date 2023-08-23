@@ -1,0 +1,176 @@
+* {
+    font-family: Sans-serif;
+
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+}
+
+.list {
+    padding: 10px;
+    align-self: center;
+}
+
+.players {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(4, 153, 153);
+    color: white;
+}
+
+.player {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameplayer {
+    align-self: center;
+}
+
+.list-players {
+    font-size: 20px;
+    color: rgb(172, 171, 171);
+
+}
+
+.add-player {
+    padding: 10px;
+    background-color: rgb(4, 153, 153);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.player {
+    border-bottom: 1px solid rgb(196, 190, 190);
+    height: 45px;
+
+}
+
+.delete-btn {
+    background-color: white;
+    color: gainsboro;
+    height: 100%;
+
+}
+
+input {
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(1, 86, 86);
+    color: white;
+    padding: 3px;
+}
+
+.clickadd {
+    background-color: aliceblue;
+    height: 38px;
+    width: 130px;
+}
+
+.clickadd:hover {
+    background-color: black;
+    color: aliceblue;
+}
+
+button {
+    border: none;
+}
+
+.point button {
+    height: 100%;
+    width: 45px;
+}
+
+.point button:hover {
+    color: white;
+    background-color: rgb(4, 153, 153);
+}
+
+.nameplayer {
+    gap: 30px;
+}
+
+.highest-score {
+    color: gold;
+}
+
+
+#snackbardelete {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+
+#snackbardelete.show {
+    visibility: visible;
+
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
